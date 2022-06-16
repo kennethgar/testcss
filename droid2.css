@@ -26,16 +26,16 @@
 #closeAdsBtn {
   display: none;
   position: fixed;
-  bottom:0px;
-right:25%;
-left:50%;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: red;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
+  z-index: 999999999999;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
 }
