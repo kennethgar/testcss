@@ -62,8 +62,12 @@
 
 
 setInterval(function () {
-  document.querySelectorAll(".adsbygoogle[data-ad-format]:not(.center)").classList.add('shake')
-  setTimeout(function(){
-    document.querySelectorAll(".adsbygoogle[data-ad-format]:not(.center)").classList.remove('shake')
-  }, 1000)
+  let boxes = document.querySelectorAll(".adsbygoogle[data-ad-format]:not(.center)")
+  for (const box of boxes) {
+    box.classList.add('shake')
+    setTimeout(function(){
+      box.classList.remove('shake')
+    }, 1000)
+  }
+  
 }, 4000);
