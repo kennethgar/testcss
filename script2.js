@@ -62,8 +62,8 @@
 
 
 setInterval(function () {
-  document.querySelectorAll(".adsbygoogle:not(.center)").classList.add('shake')
+  document.querySelectorAll(".adsbygoogle[data-ad-format]:not(.center)").classList.add('shake')
   setTimeout(function(){
-    document.querySelectorAll(".adsbygoogle:not(.center)").classList.remove('shake')
+    document.querySelectorAll(".adsbygoogle[data-ad-format]:not(.center)").classList.remove('shake')
   }, 1000)
 }, 4000);
